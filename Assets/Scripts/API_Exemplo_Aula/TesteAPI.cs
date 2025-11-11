@@ -25,23 +25,6 @@ public class TesteAPI : MonoBehaviour
 
         //adicionar jogador na API
         Jogador jogador1Start = await apiService.CriarJogador(novoJogador1);
-        Debug.Log($"Jogadores criados: (ID: {jogador1Start.id})");
-        //adicionar itens para o jogador 1
-        //ItemJogador novoItem1 = new ItemJogador();
-        //novoItem1.Nome = "Espada";
-        //novoItem1.Descricao = "Espada de Aço";
-        //novoItem1.Dano = 10;
-        //novoItem1.JogadorId = criadoJogador1.id;
-        //ItemJogador criadoItem1 = await apiService.AdicionarItem(criadoJogador1.id, novoItem1);
-        //ItemJogador novoItem2 = new ItemJogador();
-        //novoItem2.Nome = "Escudo";
-        //novoItem2.Descricao = "Escudo de Madeira";
-        //novoItem2.Dano = 5;
-        //novoItem2.JogadorId = criadoJogador1.id;
-        //ItemJogador criadoItem2 = await apiService.AdicionarItem(criadoJogador1.id, novoItem2);
-        //alterar vida do jogador 1
-        //criadoJogador1.Vida = 80;
-        //Jogador atualizadoJogador1 = await apiService.AtualizarJogador(criadoJogador1.id, criadoJogador1);
 
         //mostrar todos os jogadores
         await MostrarTodosJogadores();
